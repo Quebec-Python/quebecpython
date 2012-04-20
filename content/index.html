@@ -1,23 +1,32 @@
 {% extends "skeleton/_body.html" %}
 
 {%hyde
-    title: "Hyde : Ready for customization"
-    created: 2009-02-01 18:09:05
+    title: ""
+    created: 2012-04-20 0:20:00
     listing: True
 %}
 
 {% block content_body %}
-
-<h2>Recent Posts</h2>
-
-	{%recent_posts recents 5 %}
-
-	<ul>
-		{%for post in recents %}
-			<li>
-				<a href='{{post.url}}'>{{post.title}}</a>
-			</li>
-		{%endfor%}
-	</ul>
-
+<p>
+    Préfèrez :<br>
+    la beauté à la laideur,<br>
+    l’explicite à l’implicite,<br>
+    le simple au complexe<br>
+    et le complexe au compliqué,<br>
+    le déroulé à l’imbriqué,<br>
+    l’aéré au compact.<br>
+    Prends en compte la lisibilité.<br>
+    Les cas particuliers ne le sont jamais assez pour violer les règles.<br>
+    Mais, à la pureté, privilégie l’aspect pratique.<br>
+    Ne passe pas les erreurs sous silence,<br>
+    ... ou bâillonne-les explicitement.<br>
+    Face à l’ambiguïté, à deviner ne te laisse pas aller.<br>
+    Sache qu’il ne devrait avoir qu’une et une seule façon de procéder,<br>
+    même si, de prime abord, elle n’est pas évidente, à moins d’être Néerlandais.<br>
+    Mieux vaut maintenant que jamais.<br>
+    Cependant jamais est souvent mieux qu’immédiatement.<br>
+    Si l’implémentation s’explique difficilement, c’est une mauvaise idée.<br>
+    Si l’implémentation s’explique aisément, c’est peut-être une bonne idée.<br>
+    Les espaces de nommage ! Sacrée bonne idée ! Faisons plus de trucs comme ça.<br>
+</p>
 {%endblock%}

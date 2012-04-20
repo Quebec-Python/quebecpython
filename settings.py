@@ -56,29 +56,29 @@ MEDIA_PROCESSORS = {
     '*':{
         '.css':('hydeengine.media_processors.TemplateProcessor',
                 'hydeengine.media_processors.CSSmin',),
-        '.ccss':('hydeengine.media_processors.TemplateProcessor',
-                'hydeengine.media_processors.CleverCSS',
-                'hydeengine.media_processors.CSSmin',),
-        '.sass':('hydeengine.media_processors.TemplateProcessor',
-                'hydeengine.media_processors.SASS',
-                'hydeengine.media_processors.CSSmin',),
-        '.less':('hydeengine.media_processors.TemplateProcessor',
-                'hydeengine.media_processors.LessCSS',
-                'hydeengine.media_processors.CSSmin',),
-        '.styl':('hydeengine.media_processors.TemplateProcessor',
-                'hydeengine.media_processors.Stylus',
-                'hydeengine.media_processors.CSSmin',),
-        '.hss':(
-                'hydeengine.media_processors.TemplateProcessor',
-                'hydeengine.media_processors.HSS',
-                'hydeengine.media_processors.CSSmin',),
+        # '.ccss':('hydeengine.media_processors.TemplateProcessor',
+        #         'hydeengine.media_processors.CleverCSS',
+        #         'hydeengine.media_processors.CSSmin',),
+        # '.sass':('hydeengine.media_processors.TemplateProcessor',
+        #         'hydeengine.media_processors.SASS',
+        #         'hydeengine.media_processors.CSSmin',),
+        # '.less':('hydeengine.media_processors.TemplateProcessor',
+        #         'hydeengine.media_processors.LessCSS',
+        #         'hydeengine.media_processors.CSSmin',),
+        # '.styl':('hydeengine.media_processors.TemplateProcessor',
+        #         'hydeengine.media_processors.Stylus',
+        #         'hydeengine.media_processors.CSSmin',),
+        # '.hss':(
+        #         'hydeengine.media_processors.TemplateProcessor',
+        #         'hydeengine.media_processors.HSS',
+        #         'hydeengine.media_processors.CSSmin',),
         '.js':(
                 'hydeengine.media_processors.TemplateProcessor',
                 'hydeengine.media_processors.JSmin',),
-        '.coffee':(
-                'hydeengine.media_processors.TemplateProcessor',
-                'hydeengine.media_processors.CoffeeScript',
-                'hydeengine.media_processors.JSmin',)
+        # '.coffee':(
+        #         'hydeengine.media_processors.TemplateProcessor',
+        #         'hydeengine.media_processors.CoffeeScript',
+        #         'hydeengine.media_processors.JSmin',)
     }
 }
 
