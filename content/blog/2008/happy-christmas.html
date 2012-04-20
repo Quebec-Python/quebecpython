@@ -1,0 +1,32 @@
+{% extends "_post.html" %}
+
+{%load webdesign %}
+
+{%hyde
+    title: Merry Christmas
+    created: 2008-12-20 18:20:30
+%}
+
+{% block article %}
+
+{%article%}
+
+{% excerpt %}
+
+### {% lorem 10 w random %} ###
+
+{% lorem 3 p %}
+
+{%endexcerpt%}
+
+### {% lorem 5 w random %} ###
+
+{% lorem 2 p %}
+
+### {% lorem 2 w random %} ###
+
+{% lorem 3 p %}
+
+{%endarticle%}
+
+{% endblock %}
