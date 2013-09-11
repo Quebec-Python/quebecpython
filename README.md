@@ -1,4 +1,6 @@
 Québec-Python
 ============
 
-Le site de quebecpython.org
+Québec-Python's website.
+
+Built with [Hyde](http://ringce.com/hyde)
