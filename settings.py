@@ -15,7 +15,7 @@ BACKUP = False
 
 SITE_ROOT = "/"
 SITE_WWW_URL = "http://quebecpython.org"
-SITE_NAME = u"Québec Python"
+SITE_NAME = u"Québec-Python"
 SITE_AUTHOR = "Bernard Chhun"
 
 #URL Configuration
