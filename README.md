@@ -5,21 +5,21 @@ Québec-Python's website.
 
 Built with [Pelican](http://getpelican.com)
 
-Dependancies
+Dependencies
 ------------
 
-* See *requirements.txt* file for Pelican's dependancies.
+* See *requirements.txt* file for Pelican's dependencies.
 * Sass / Compass
 
 Building the website
 --------------------
 
-1. Install the dependancies
+Install the dependencies
 
     pip install -r requirements.txt
 
-2. Run the following command in the project's folder:
+Run the following command in the project's folder:
 
     make devserver
 
-3. Type http://localhost:8000 in your browser to see the website
+Type http://localhost:8000 in your browser to see the website
