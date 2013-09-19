@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Bernard Chhun'
-SITENAME = u'Quebec-Python'
+SITENAME = u'Québec-Python'
 SITEURL = ''
 
 TIMEZONE = 'America/Montreal'

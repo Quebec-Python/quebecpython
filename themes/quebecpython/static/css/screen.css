@@ -2380,7 +2380,7 @@ a.th { display: inline-block; }
 .f-dropdown.large { max-width: 800px; }
 
 /* line 11, ../sass/screen.scss */
-body { font-size: 16px; font-family: 'Cabin', sans-serif; }
+body { font-size: 20px; font-family: 'Cabin', sans-serif; }
 
 /* line 17, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 { font-family: 'Cabin', sans-serif; }
