@@ -1,25 +1,46 @@
-Québec-Python
-============
+# Québec-Python
 
 Québec-Python's website.
 
 Built with [Pelican](http://getpelican.com)
 
-Dependencies
-------------
+## Dependencies
 
 * See *requirements.txt* file for Pelican's dependencies.
 * Sass / Compass
 
-Building the website
---------------------
+## Dev environment setup
 
-Install the dependencies
+### Running Vagrant
 
-    pip install -r requirements.txt
+Install the [latest VirtualBox](https://www.virtualbox.org/) and [Vagrant](http://www.vagrantup.com/)
 
-Run the following command in the project's folder:
+### Then hop into the vagrant folder:
 
-    make devserver
+    $ vagrant up
 
-Type http://localhost:8000 in your browser to see the website
+### Get into the VM by typing:
+
+    $ vagrant ssh
+
+### Go into the folder where the project is
+
+    $ cd quebecpython
+
+### Install Pelican's dependencies 
+
+    $ sudo pip install -r requirements.txt
+
+### Run the following command in the project's folder:
+
+    $ make devserver
+
+Type http://localhost:8080 in your browser to see the website
+
+## FAQ
+
+### How can I stop Pelican's webserver ?
+
+You need to run the shell script:
+
+    $ ./develop_server.sh stop
