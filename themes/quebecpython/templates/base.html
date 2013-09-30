@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ DEFAULT_LANG }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Québec-Python</title>
+    <title>{{ SITENAME }} {% block title %}{% endblock title %}</title>
     <link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
     <link href="{{ SITEURL }}/theme/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="row">
-        <div class="large-12">
-            <h1>Québec-Python</h1>
-            <p>
-                Préfèrez :<br>
-                la beauté à la laideur,<br>
-                l’explicite à l’implicite,<br>
-                le simple au complexe<br>
-                et le complexe au compliqué,<br>
-                le déroulé à l’imbriqué,<br>
-                l’aéré au compact.<br>
-                Prends en compte la lisibilité.<br>
-                Les cas particuliers ne le sont jamais assez pour violer les règles.<br>
-                Mais, à la pureté, privilégie l’aspect pratique.<br>
-                Ne passe pas les erreurs sous silence,<br>
-                ... ou bâillonne-les explicitement.<br>
-                Face à l’ambiguïté, à deviner ne te laisse pas aller.<br>
-                Sache qu’il ne devrait avoir qu’une et une seule façon de procéder,<br>
-                même si, de prime abord, elle n’est pas évidente, à moins d’être Néerlandais.<br>
-                Mieux vaut maintenant que jamais.<br>
-                Cependant jamais est souvent mieux qu’immédiatement.<br>
-                Si l’implémentation s’explique difficilement, c’est une mauvaise idée.<br>
-                Si l’implémentation s’explique aisément, c’est peut-être une bonne idée.<br>
-                Les espaces de nommage ! Sacrée bonne idée ! Faisons plus de trucs comme ça.<br>
-            </p>
+    <header class="row">
+        <div class="large-12 columns">
+            <h1><a href="/">{{ SITENAME }}</a></h1>
         </div>
+    </header>
+    <div id="main" class="row">
+        <aside class="large-2 columns">
+            <nav>
+                <ul class="side-nav">
+                    {% for p in PAGES %}
+                        <li{% if p == page %} class="active"{% endif %}>
+                            <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </aside>
+        <section class="large-8 columns">
+        {% block content %}
+        {% endblock %}
+        </section>
+        <aside class="large-2 columns">
+            <h5>Liens utiles</h5>
+            <ul class="links">
+                {% for text, link in LINKS %}
+                    <li>
+                        <a href="{{ link }}" target="_blank" title="{{ text }}">{{ text }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </aside>
     </div>
+    <footer class="row">
+        <div class="large-12 columns">
+            <p><small>Propulsé par <a href="http://docs.getpelican.com/en/3.2/" title="Pelican">Pelican</a></small> </p>
+        </div>
+    </footer>
 </body>
 </html>
