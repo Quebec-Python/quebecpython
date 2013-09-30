@@ -25,10 +25,20 @@
                 </ul>
             </nav>
         </aside>
-        <section class="large-10 columns">
+        <section class="large-8 columns">
         {% block content %}
         {% endblock %}
         </section>
+        <aside class="large-2 columns">
+            <h5>Liens utiles</h5>
+            <ul class="links">
+                {% for text, link in LINKS %}
+                    <li>
+                        <a href="{{ link }}" target="_blank" title="{{ text }}">{{ text }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </aside>
     </div>
     <footer class="row">
         <div class="large-12 columns">
