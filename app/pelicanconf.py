@@ -23,6 +23,7 @@ LINKS =  (
     ('Groupe Facebook', 'https://www.facebook.com/groups/quebecpython/'),
     ('Twitter' , 'https://twitter.com/quebecpy'),
     ('Trello' , 'https://trello.com/b/ACTUjx3z/quebec-python'),
+    ('Github' , 'https://github.com/Quebec-Python'),
 )
 
 # Social widget
