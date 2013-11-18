@@ -1,9 +1,18 @@
 {% extends "base.html" %}
 
 {% block title %}
-
+- Accueil
 {% endblock %}
 
 {% block content %}
-
+<div class="articles">
+    {% for article in articles_page.object_list %}
+    <article>
+        <h2 class="title">
+            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title }}</a>
+        </h2>
+        <div class="entry-content"> {{ article.summary }} </div>
+    </article>
+    {% endfor %}
+</div>
 {% endblock %}

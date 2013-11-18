@@ -17,3 +17,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
     @include cabin-font;
 }
+
+ul {
+    margin-bottom:1.25em;
+}
+
+
+article {
+    ul {
+        margin-left:1.25em;
+    }
+}
