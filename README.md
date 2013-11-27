@@ -27,7 +27,7 @@ Install the [latest VirtualBox](https://www.virtualbox.org/) and [Vagrant](http:
 
     $ cd quebecpython
 
-### Install Pelican's dependencies 
+### Install Pelican's dependencies
 
     $ sudo pip install -r requirements.txt
 
