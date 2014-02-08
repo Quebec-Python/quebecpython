@@ -28,16 +28,10 @@
                     </ul>
                 </nav>
                 <div class="links-container">
-                    {% for text, link in LINKS %}
-                        {% if loop.index0 == 0 or loop.index0 % 2 == 0 %}
-                            <div class="row">
-                        {% endif %}
-
-                        <a class="btn btn-info" href="{{ link }}" target="_blank" title="{{ text }}">{{ text }}</a>
-
-                        {% if loop.index == 2 or loop.index % 2 == 0  %}
-                            </div>
-                        {% endif %}
+                    {% for text, link, cls in LINKS %}
+                        <div class="row">
+                            <a class="btn btn-info {{ cls }}" href="{{ link }}" target="_blank" title="{{ text }}">{{ text }}</a>
+                        </div>
                     {% endfor %}
                 </div>
             </aside>

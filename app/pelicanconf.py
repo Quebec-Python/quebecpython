@@ -15,7 +15,7 @@ IGNORE_FILES = (
     "Grunt*",
     "package.json",
     ".*",
-    "/node_modules"
+    "node_modules/*"
 )
 
 DEFAULT_LANG = u'fr'
@@ -27,11 +27,11 @@ TRANSLATION_FEED_ATOM = None
 
 # Blogroll
 LINKS =  (
-    ('Liste de diffusion', 'https://groups.google.com/forum/?hl=fr#!forum/quebec-python'),
-    ('Groupe Facebook', 'https://www.facebook.com/groups/quebecpython/'),
-    ('Twitter' , 'https://twitter.com/quebecpy'),
-    ('Trello' , 'https://trello.com/b/ACTUjx3z/quebec-python'),
-    ('Github' , 'https://github.com/Quebec-Python'),
+    ('Liste de diffusion', 'https://groups.google.com/forum/?hl=fr#!forum/quebec-python', "qcpy-mailing-list"),
+    ('Groupe Facebook', 'https://www.facebook.com/groups/quebecpython/', "qcpy-facebook"),
+    ('Twitter' , 'https://twitter.com/quebecpy', "qcpy-twitter"),
+    ('Trello' , 'https://trello.com/b/ACTUjx3z/quebec-python', "qcpy-trello"),
+    ('Github' , 'https://github.com/Quebec-Python', "qcpy-github"),
 )
 
 # Social widget
