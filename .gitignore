@@ -2,3 +2,4 @@ venv
 *.pid
 output
 *.pyc
+node_modules

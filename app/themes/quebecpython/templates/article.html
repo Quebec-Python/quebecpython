@@ -5,16 +5,15 @@
 {% endblock title %}
 
 {% block content %}
-    <article>
-        <h2 id="title">
+    <article class="qcpy-article">
+        <h3 id="title">
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
                 title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
-        </h2>
+        </h3>
         <h5><abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr></h5>
         {{ article.content }}
+        <footer>
+            <a href="{{ SITEURL }}/" class="btn btn-info">&larr;&nbsp;&nbsp;&nbsp;Retour</a>
+        </footer>
     </article>
-
-    <footer>
-        <a href="{{ SITEURL }}/" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;Retour</a>
-    </footer>
 {% endblock %}

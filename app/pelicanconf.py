@@ -2,13 +2,21 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Bernard Chhun'
+AUTHOR = u'Les organisateurs de Québec-Python'
 SITENAME = u'Québec-Python'
 SITEURL = ''
 
 TIMEZONE = 'America/Montreal'
 
 THEME = "themes/quebecpython"
+
+IGNORE_FILES = (
+    "*.less",
+    "Grunt*",
+    "package.json",
+    ".*",
+    "/node_modules"
+)
 
 DEFAULT_LANG = u'fr'
 
@@ -30,7 +38,8 @@ LINKS =  (
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
+
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

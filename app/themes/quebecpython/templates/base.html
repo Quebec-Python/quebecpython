@@ -5,46 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ SITENAME }} {% block title %}{% endblock title %}</title>
-    <link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
-    <link href="{{ SITEURL }}/theme/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="{{ SITEURL }}/theme/css/main.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <header class="row">
-        <div class="large-12 columns">
-            <h1><a href="/">{{ SITENAME }}</a></h1>
-        </div>
-    </header>
-    <div id="main" class="row">
-        <aside class="large-2 columns">
-            <nav>
-                <ul class="side-nav">
-                    {% for p in PAGES %}
-                        <li{% if p == page %} class="active"{% endif %}>
-                            <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
-                        </li>
+    <div class="container-fluid qcpy-container">
+        <div id="main" class="row">
+            <section class="col-xs-12 col-lg-9">
+                <h1><a href="/">{{ SITENAME }}</a></h1>
+                <hr>
+                {% block content %}
+                {% endblock %}
+            </section>
+
+            <aside class="sidebar col-xs-12 col-lg-3">
+                <nav class="qcpy-nav-main">
+                    <ul class="nav nav-pills nav-stacked">
+                        {% for p in PAGES %}
+                            <li{% if p == page %} class="active"{% endif %}>
+                                <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+                <div class="links-container">
+                    {% for text, link in LINKS %}
+                        {% if loop.index0 == 0 or loop.index0 % 2 == 0 %}
+                            <div class="row">
+                        {% endif %}
+
+                        <a class="btn btn-info" href="{{ link }}" target="_blank" title="{{ text }}">{{ text }}</a>
+
+                        {% if loop.index == 2 or loop.index % 2 == 0  %}
+                            </div>
+                        {% endif %}
                     {% endfor %}
-                </ul>
-            </nav>
-        </aside>
-        <section class="large-8 columns">
-        {% block content %}
-        {% endblock %}
-        </section>
-        <aside class="large-2 columns">
-            <h5>Liens utiles</h5>
-            <ul class="links">
-                {% for text, link in LINKS %}
-                    <li>
-                        <a href="{{ link }}" target="_blank" title="{{ text }}">{{ text }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </aside>
-    </div>
-    <footer class="row">
-        <div class="large-12 columns">
-            <p><small>Propulsé par <a href="http://docs.getpelican.com/en/3.2/" title="Pelican">Pelican</a></small> </p>
+                </div>
+            </aside>
         </div>
-    </footer>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </body>
 </html>

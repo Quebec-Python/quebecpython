@@ -1,0 +1,10 @@
+{
+  "name": "quebecpython-theme",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-less": "~0.8.3",
+    "grunt-contrib-watch": "~0.5.3",
+    "twitter-bootstrap-3.0.0": "~3.0.0"
+  }
+}

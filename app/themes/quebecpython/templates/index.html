@@ -8,11 +8,53 @@
 <div class="articles">
     {% for article in articles_page.object_list %}
     <article>
-        <h2 class="title">
+        <h3 class="title">
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title }}</a>
-        </h2>
+        </h3>
+        <h5>
+            <abbr class="published" title="{{ article.date.isoformat() }}">
+                {{ article.locale_date }}
+            </abbr>
+        </h5>
         <div class="entry-content"> {{ article.summary }} </div>
     </article>
     {% endfor %}
 </div>
+
+<div class="qcpy-partners-sponsors row">
+    <div class="col-lg-6">
+        <h3>Partenaires</h3>
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="http://montrealpython.org">
+                    <img src="{{ SITEURL }}/theme/img/logo-mtl-py.png" alt="Montréal-Python" style="width:150px;">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a href="http://saglac.io/">saglac.io</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="http://opencode.ca/">
+                    <strong>&lt;</strong><em class="glyphicon glyphicon-heart"></em><strong>&gt;</strong> OpenCode
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-lg-6">
+        <h3>Commanditaires</h3>
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="http://savoirfairelinux.com">
+                    <img src="{{ SITEURL }}/theme/img/logo-sfl.png" alt="Savoir-faire Linux">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 {% endblock %}
