@@ -18,6 +18,8 @@ IGNORE_FILES = (
     "node_modules/*"
 )
 
+PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
+
 DEFAULT_LANG = u'fr'
 
 # Feed generation is usually not desired when developing
