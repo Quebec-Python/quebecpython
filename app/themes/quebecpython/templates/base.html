@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ SITENAME }} {% block title %}{% endblock title %}</title>
-    <link href="{{ SITEURL }}/theme/css/main.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="{{ SITEURL }}/theme/css/font-awesome.min.css" media="screen, projection, print" rel="stylesheet" type="text/css" />
+    <link href="{{ SITEURL }}/theme/css/main.min.css" media="screen, projection, print" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div class="container-fluid qcpy-container">
@@ -30,7 +31,9 @@
                 <div class="links-container">
                     {% for text, link, cls in LINKS %}
                         <div class="row">
-                            <a class="btn btn-info {{ cls }}" href="{{ link }}" target="_blank" title="{{ text }}">{{ text }}</a>
+                            <a class="btn btn-info" href="{{ link }}" target="_blank" title="{{ text }}">
+                                <span class="{{ cls }}"></span> {{ text }}
+                            </a>
                         </div>
                     {% endfor %}
                 </div>

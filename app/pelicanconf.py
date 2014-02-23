@@ -29,11 +29,13 @@ TRANSLATION_FEED_ATOM = None
 
 # Blogroll
 LINKS =  (
-    ('Liste de diffusion', 'https://groups.google.com/forum/?hl=fr#!forum/quebec-python', "qcpy-mailing-list"),
-    ('Groupe Facebook', 'https://www.facebook.com/groups/quebecpython/', "qcpy-facebook"),
-    ('Twitter' , 'https://twitter.com/quebecpy', "qcpy-twitter"),
-    ('Trello' , 'https://trello.com/b/ACTUjx3z/quebec-python', "qcpy-trello"),
-    ('Github' , 'https://github.com/Quebec-Python', "qcpy-github"),
+    # (texte, lien, icone)
+    ('Liste de diffusion', 'https://groups.google.com/forum/?hl=fr#!forum/quebec-python', "fa fa-archive"),
+    ('Nous contacter', 'mailto:info@quebecpython.org', 'fa fa-envelope-o'),
+    ('Groupe Facebook', 'https://www.facebook.com/groups/quebecpython/', "fa fa-facebook"),
+    ('Twitter' , 'https://twitter.com/quebecpy', "fa fa-twitter"),
+    ('Trello' , 'https://trello.com/b/ACTUjx3z/quebec-python', "fa fa-trello"),
+    ('Github' , 'https://github.com/Quebec-Python', "fa fa-github"),
 )
 
 # Social widget
