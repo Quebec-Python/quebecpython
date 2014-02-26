@@ -36,6 +36,7 @@ LINKS =  (
     ('Twitter' , 'https://twitter.com/quebecpy', "fa fa-twitter"),
     ('Trello' , 'https://trello.com/b/ACTUjx3z/quebec-python', "fa fa-trello"),
     ('Github' , 'https://github.com/Quebec-Python', "fa fa-github"),
+    ('Flux Atom', '/feeds/all.atom.xml', "fa fa-rss")
 )
 
 # Social widget
