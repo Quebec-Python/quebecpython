@@ -1,6 +1,6 @@
 Title: À propos
 Slug: a-propos
-Author: Les organisateurs de Québec-Python
+Author: Québec-Python
 Summary: Qu'est-ce que Québec-Python ?
 
 Nous sommes un regroupement de développeurs enthousiasmés par le langage de programmation Python.

@@ -1,6 +1,6 @@
 Title: Nos ateliers
 Slug: ateliers
-Author: Les organisateurs de Québec-Python
+Author: Québec-Python
 Summary: En quoi consiste les ateliers Québec-Python ?
 
 Nous désirons débuter nos ateliers en mai 2014.

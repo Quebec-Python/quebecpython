@@ -12,8 +12,11 @@
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title }}</a>
         </h3>
         <h5>
+            <abbr class="published"> 
+                Par {{ article.author }}
+            </abbr>
             <abbr class="published" title="{{ article.date.isoformat() }}">
-                {{ article.locale_date }}
+                Le {{ article.locale_date }}
             </abbr>
         </h5>
         <div class="entry-content"> {{ article.summary }} </div>
