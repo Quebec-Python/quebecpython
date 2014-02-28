@@ -32,6 +32,7 @@ LINKS =  (
     # (texte, lien, icone)
     ('Liste de diffusion', 'https://groups.google.com/forum/?hl=fr#!forum/quebec-python', "fa fa-archive"),
     ('Nous contacter', 'mailto:info@quebecpython.org', 'fa fa-envelope-o'),
+    ('Chaine Youtube', 'http://www.youtube.com/channel/UCRTvFM6HDOtMfOrIXc_RwqA', 'fa fa-youtube-play'),
     ('Groupe Facebook', 'https://www.facebook.com/groups/quebecpython/', "fa fa-facebook"),
     ('Twitter' , 'https://twitter.com/quebecpy', "fa fa-twitter"),
     ('Trello' , 'https://trello.com/b/ACTUjx3z/quebec-python', "fa fa-trello"),
