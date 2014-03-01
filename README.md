@@ -6,7 +6,7 @@ Built with [Pelican](http://getpelican.com)
 
 ## Dependencies
 
-* <= Python 3.3
+* >= Python 2.7
 * See *requirements.txt* file for Pelican's dependencies.
 * Node.js / NPM / Grunt for the theme
 
