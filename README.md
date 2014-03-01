@@ -22,7 +22,7 @@ There are 2 ways to run our website on your machine:
     $ pip install -r requirements.txt
     $ make devserver
 
-Type [http://localhost:8080](http://localhost:8000) in your browser to see the website
+Type [http://localhost:8000](http://localhost:8000) in your browser to see the website
 
 ### 2. The VirtualBox/Vagrant way when the virtualenv way fails
 
@@ -45,7 +45,7 @@ Install the [latest VirtualBox](https://www.virtualbox.org/) and [Vagrant](http:
     # Run the following command in the project's folder:
     $ make devserver
 
-Type [http://localhost:8080](http://localhost:8000) in your browser to see the website
+Type [http://localhost:8000](http://localhost:8000) in your browser to see the website
 
 ## FAQ
 
