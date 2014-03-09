@@ -10,7 +10,14 @@
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
                 title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
         </h3>
-        <h5><abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr></h5>
+        <h5>
+            <abbr class="published"> 
+                Par {{ article.author }}
+            </abbr>
+            <abbr class="published" title="{{ article.date.isoformat() }}">
+                Le {{ article.locale_date }}
+            </abbr>
+        </h5>
         {{ article.content }}
         <footer>
             <a href="{{ SITEURL }}/" class="btn btn-info">&larr;&nbsp;&nbsp;&nbsp;Retour</a>
