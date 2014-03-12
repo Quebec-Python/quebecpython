@@ -11,13 +11,14 @@
                 title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
         </h3>
         <h5>
-            <abbr class="published"> 
-                Par {{ article.author }}
-            </abbr>
+            {% if article.author %}
+            Par {{ article.author }} le
+            {% endif %}
             <abbr class="published" title="{{ article.date.isoformat() }}">
-                Le {{ article.locale_date }}
+                {{ article.locale_date }}
             </abbr>
         </h5>
+        <hr class="dashed">
         {{ article.content }}
         <footer>
             <a href="{{ SITEURL }}/" class="btn btn-info">&larr;&nbsp;&nbsp;&nbsp;Retour</a>

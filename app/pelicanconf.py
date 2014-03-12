@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Les organisateurs de Québec-Python'
+AUTHOR = u'les organisateurs de Québec-Python'
 SITENAME = u'Québec-Python'
 SITEURL = ''
 
