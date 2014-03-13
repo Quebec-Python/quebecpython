@@ -73,7 +73,7 @@ You need to run the make script with the following option:
 
 #### *static* folder
 
-You need to install ```Grunt``` in the this folder for live ```LessCSS``` compilation & minification as you edit those ```less``` files.
+You need to install ```Grunt``` in this folder for live ```LessCSS``` compilation & minification as you edit those ```less``` files.
 
 Take a look at the ```themes/quebecpython/static/css/src/main.less``` file to see that it is
 based on [Bootstrap](http://getbootstrap.com/) and [Bootswatch's Yeti theme](http://bootswatch.com/yeti/).
